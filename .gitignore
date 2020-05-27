@@ -1,0 +1,6 @@
+# Keros Naxos Specific files and data
+*.csv
+/data/*.*
+/gis/*.*
+/tossold/*.*
+README.md
