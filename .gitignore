@@ -2,5 +2,6 @@
 *.csv
 /data/*.*
 /gis/*.*
+/script/_pychache_/*.*
 /tossold/*.*
 README.md
