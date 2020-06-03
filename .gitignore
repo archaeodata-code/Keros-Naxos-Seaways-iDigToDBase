@@ -3,5 +3,5 @@
 /data/*.*
 /gis/*.*
 /script/_pychache_/*.*
-/tossold/*.*
+/script/x*
 README.md
