@@ -1,0 +1,844 @@
+{
+"tablename":"pottery",
+"csv":"Pottery.csv",
+"dbcsv":"LoadCSVs/Pottery2.csv",
+"status":"draft",
+"note": "",
+"work_to_be_done":"Validation rules",
+"fields":[
+            {
+                "name":"Source",
+                "title":"Trench",
+                "type":"string",
+                "description":"The name of the trench from which this sample was taken."
+            },
+            {
+                "name":"ContextID",
+                "title":"Context",
+                "type":"string",
+                "description":"The name of the context(s) from which the sample is taken.",
+                "constraints": {
+                    "required":true
+                    }
+            },
+            {
+                "name":"Identifier",
+                "title":"SampleNo",
+                "type":"string",
+                "description":"Sample number is a sequential number assigned per context at the time the sample is taken.",
+                "constraints": {
+                    "required":true
+                    }
+            },
+            {
+                "name":"Origin",
+                "title":"Origin",
+                "type":"string",
+                "description":"The process during which the sample was taken (e.g. excavation or sieving, etc."
+            },
+            {
+                "name":"DateEarliest",
+                "title":"DateTimeStamp",
+                "type":"string",
+                "description":"A datetime stamp set when the sample record was created."
+            },
+            {
+                "name":"Creator",
+                "title":"Creator",
+                "type":"string",
+                "description":"Initials of staff person who created this record."
+            },
+            {
+                "name":"Description",
+                "title":"Description",
+                "type":"string",
+                "description":"Optional description of sample."
+            },            
+            {
+                "name":"PotterySpecialistInitials",
+                "title":"PotterySpecialistInitials",
+                "type":"string",
+                "description":"Initials of specialist who processed sample."
+            },
+            {
+                "name":"PotteryJoins",
+                "title":"PotteryJoins",
+                "type":"string",
+                "description":"Description of contexts across which joins are found."
+            },
+            {
+                "name":"PotteryInventoriedMaterial",
+                "title":"PotteryInventoriedMaterial",
+                "type":"string",
+                "description":"Description of inventoried item(s) from sample."
+            },
+            {
+                "name":"PotteryImports",
+                "title":"PotteryImports",
+                "type":"string",
+                "description":"Designating a possible import"
+            },
+            {
+                "name":"PotteryWheel",
+                "title":"PotteryWheel",
+                "type":"string",
+                "description":"Designating a possible wheel-made vessel"
+            },
+            {
+                "name":"PotteryKastri",
+                "title":"PotteryKastri", 
+                "type":"string",
+                "description":"Designating a possible Kastri vessel"
+            },
+            {              
+                "name":"PotteryImpressions",
+                "title":"PotteryImpressions",
+                "type":"string",
+                "description":"Indicating presence of impressions."
+            },            
+            {
+                "name":"PotteryMarks",
+                "title":"PotteryMarks",
+                "type":"string",
+                "description":"Indicating presence of marks."
+            },
+            {
+                "name":"PotterySherdSizes",
+                "title":"PotterySherdSizes",
+                "type":"string",
+                "description":"Describing the size of the sherds in the sample."
+            },  
+            {
+                "name":"PotteryWear",
+                "title":"PotteryWear",
+                "type":"string",
+                "description":"Indicating the degree of wear on the pottery."
+            },
+            {
+                "name":"PotteryBurning",
+                "title":"PotteryBurning",
+                "type":"string",
+                "description":"Indicating the presence of burning of the pottery."
+            },
+            {
+                "name":"PotteryCountBlueSchist",
+                "title":"PotteryCountBlueSchist",
+                "type":"string",
+                "description":"The count of Blue Schist sherds."
+            },
+            {
+                "name":"PotteryCountRedSchist",
+                "title":"PotteryCountRedSchist",
+                "type":"number",
+                "description":"The count of Red Schist sherds."
+            },
+            {
+                "name":"PotteryCountBlueAndRedSchist",
+                "title":"PotteryCountBlueAndRedSchist",
+                "type":"number",
+                "description":"The count of Blue and Red Schist sherds."
+            },
+            {
+                "name":"PotteryCountTalcWare",
+                "title":"PotteryCountTalcWare",
+                "type":"number",
+                "description":"The count of Talc Ware sherds."
+            },
+            {
+                "name":"PotteryCountPaleVolcanic",
+                "title":"PotteryCountPaleVolcanic",
+                "type":"number",
+                "description":"The count of Pale Volcanic sherds."
+            },
+            {
+                "name":"PotteryCountMicaceousSchist",
+                "title":"PotteryCountMicaceousSchist",
+                "type":"number",
+                "description":"The count of Micaceous Schist sherds."
+            },
+            {
+                "name":"PotteryCountCalciteTemper",
+                "title":"PotteryCountCalciteTemper",
+                "type":"number",
+                "description":"The count of Calcite Temper sherds."
+            },
+            {
+                "name":"PotteryCountGranitic",
+                "title":"PotteryCountCalciteGranitic",
+                "type":"number",
+                "description":"The count of Granitic sherds."
+            },
+            {
+                "name":"PotteryCountSandy",
+                "title":"PotteryCountSandy",
+                "type":"number",
+                "description":"The count of Sandy sherds."
+            },
+            {
+                "name":"PotteryCountBiotiteAmphibole",
+                "title":"PotteryCountBiotiteAmphibole",
+                "type":"number",
+                "description":"The count of Sandy sherds."
+            },
+            {
+                "name":"PotteryCountOtherFabric",
+                "title":"PotteryCountOtherFabric",
+                "type":"number",
+                "description":"The count of Other Fabric sherds."
+            },
+            {
+                "name":"FabricCountComment",
+                "title":"FabricCountComment",
+                "type":"string",
+                "description":"Comments on pottery fabrics from this sample."
+            },
+            {
+                "name":"PotteryCountBakingPansOrHearths",
+                "title":"PotteryCountBakingPansOrHearths",
+                "type":"number",
+                "description":"Count of Baking Pans Or Hearths"
+            },
+            {
+                "name":"PotteryFabricBakingPansOrHearths",
+                "title":"PotteryFabricBakingPansOrHearths",
+                "type":"string",
+                "description":"Fabric counts of Baking Pans Or Hearths"
+            },
+            {
+                "name":"PotterySherdCountBakingPansOrHearths",
+                "title":"PotterySherdCountBakingPansOrHearths",
+                "type":"number",
+                "description":"Count of sherds from Baking Pans Or Hearths"
+            },
+            {
+                "name":"PotteryCountCooking",
+                "title":"PotteryCountCooking",
+                "type":"number",
+                "description":"Count of Cooking pots"
+            },
+            {
+                "name":"PotteryFabricCooking",
+                "title":"PotteryFabricCooking",
+                "type":"string",
+                "description":"Fabric counts of Cooking pots"
+            },
+            {
+                "name":"PotterySherdCountCooking",
+                "title":"PotterySherdCountCooking",
+                "type":"number",
+                "description":"Count of sherds from Cooking pots."
+            },
+            {
+                "name":"PotteryCountStorageOrPithoidJars",
+                "title":"PotteryCountStorageOrPithoidJars",
+                "type":"number",
+                "description":"Count of Storage Or Pithoid Jars."
+            },
+            {
+                "name":"PotteryFabricStoragePithoi",
+                "title":"PotteryFabricStoragePithoi",
+                "type":"string",
+                "description":"Fabric count of Storage Or Pithoid Jars."
+            },
+            {
+                "name":"PotterySherdCountStorageOrPithoidJars",
+                "title":"PotterySherdCountStorageOrPithoidJars",
+                "type":"number",
+                "description":"Count of sherds from Storage Or Pithoid Jars."
+            },
+            {
+                "name":"PotteryCountBraziers",
+                "title":"PotteryCountBraziers",
+                "type":"number",
+                "description":"Count of Braziers."
+            },
+            {
+                "name":"PotteryFabricBraziers",
+                "title":"PotteryFabricBraziers",
+                "type":"string",
+                "description":"Fabric count of Braziers."
+            },
+            {
+                "name":"PotterySherdCountBraziers",
+                "title":"PotterySherdCountBraziers",
+                "type":"number",
+                "description":"Count of sherds from Braziers."
+            },
+            {
+                "name":"PotteryCountSauceBoats",
+                "title":"PotteryCountSauceBoats",
+                "type":"number",
+                "description":"Count of SauceBoats."
+            },
+            {
+                "name":"PotteryFabricSauceBoats",
+                "title":"PotteryFabricSauceBoat",
+                "type":"string",
+                "description":"Fabric count of SauceBoats."
+            },
+            {
+                "name":"PotterySherdCountSauceBoats",
+                "title":"PotterySherdCountSauceBoats",
+                "type":"number",
+                "description":"Count of sherds from SauceBoats."
+            },
+            {
+                "name":"PotteryCountBowls",
+                "title":"PotteryCountBowls",
+                "type":"number",
+                "description":"Count of Bowls."
+            },
+            {
+                "name":"PotteryFabricBowls",
+                "title":"PotteryFabricBowls",
+                "type":"string",
+                "description":"Fabric count of Bowls."
+            },
+            {
+                "name":"PotterySherdCountBowls",
+                "title":"PotterySherdCountBowls",
+                "type":"number",
+                "description":"Count of sherds from Bowls."
+            },
+            {
+                "name":"PotteryCountCups",
+                "title":"PotteryCountCups",
+                "type":"number",
+                "description":"Count of Cups."
+            },
+            {
+                "name":"PotteryFabricCups",
+                "title":"PotteryFabricCups",
+                "type":"string",
+                "description":"Fabric count of Cups."
+            },
+            {
+                "name":"PotterySherdCountCups",
+                "title":"PotterySherdCountCups",
+                "type":"number",
+                "description":"Count of sherds from Cups."
+            },
+            {
+                "name":"PotteryCountDepas",
+                "title":"PotteryCountDepas",
+                "type":"number",
+                "description":"Count of Depas."
+            },
+            {
+                "name":"PotteryFabricDepas",
+                "title":"PotteryFabricDepas",
+                "type":"string",
+                "description":"Fabric count of Depas."
+            },
+            {
+                "name":"PotterySherdCountDepas",
+                "title":"PotterySherdCountDepas",
+                "type":"number",
+                "description":"Count of sherds from Depas."
+            }, 
+            {
+                "name":"PotteryCountTankards",
+                "title":"PotteryCountTankards",
+                "type":"number",
+                "description":"Count of Tankards."
+            },
+            {
+                "name":"PotteryFabricTankards",
+                "title":"PotteryFabricTankards",
+                "type":"string",
+                "description":"Fabric count of Tankards."
+            },
+            {
+                "name":"PotterySherdCountTankards",
+                "title":"PotterySherdCountTankards",
+                "type":"number",
+                "description":"Count of sherds from Tankards."
+            },
+            {
+                "name":"PotteryCountConicalNeckedJars",
+                "title":"PotteryCountConicalNeckedJars",
+                "type":"number",
+                "description":"Count of ConicalNeckedJars."
+            },
+            {
+                "name":"PotteryFabricConicalNeckedJars",
+                "title":"PotteryFabricConicalNeckedJars",
+                "type":"string",
+                "description":"Fabric count of ConicalNeckedJars."
+            },
+            {
+                "name":"PotterySherdCountConicalNeckedJars",
+                "title":"PotterySherdCountConicalNeckedJars",
+                "type":"number",
+                "description":"Count of sherds from ConicalNeckedJars."
+            },
+            {
+                "name":"PotteryCountBasins",
+                "title":"PotteryCountBasins",
+                "type":"number",
+                "description":"Count of Basins."
+            },
+            {
+                "name":"PotteryFabricBasins",
+                "title":"PotteryFabricBasins",
+                "type":"string",
+                "description":"Fabric count of Basins."
+            },
+            {
+                "name":"PotterySherdCountBasins",
+                "title":"PotterySherdCountBasins",
+                "type":"number",
+                "description":"Count of sherds from Basins."
+            },
+            {
+                "name":"PotteryCountJugs",
+                "title":"PotteryCountJugs",
+                "type":"number",
+                "description":"Count of Jugs."
+            },
+            {
+                "name":"PotteryFabricJugs",
+                "title":"PotteryFabricJugs",
+                "type":"string",
+                "description":"Fabric count of Jugs."
+            },
+            {
+                "name":"PotterySherdCountJugs",
+                "title":"PotterySherdCountJugs",
+                "type":"number",
+                "description":"Count of sherds from Jugs."
+            },
+            {
+                "name":"PotteryCountBeakedJug",
+                "title":"PotteryCountBeakedJug",
+                "type":"number",
+                "description":"Count of Beaked Jug."
+            },
+            {
+                "name":"PotteryFabricBeakedJug",
+                "title":"PotteryFabricBeakedJug",
+                "type":"string",
+                "description":"Fabric count of Beaked Jug."
+            },
+            {
+                "name":"PotterySherdCountBeakedJug",
+                "title":"PotterySherdCountBeakedJug",
+                "type":"number",
+                "description":"Count of sherds from Beaked Jug."
+            },
+            {
+                "name":"PotteryCountPyxides",
+                "title":"PotteryCountPyxides",
+                "type":"number",
+                "description":"Count of Pyxides."
+            },
+            {
+                "name":"PotteryFabricPyxides",
+                "title":"PotteryFabricPyxides",
+                "type":"string",
+                "description":"Fabric count of Pyxides."
+            },
+            {
+                "name":"PotterySherdCountPyxides",
+                "title":"PotterySherdCountPyxides",
+                "type":"number",
+                "description":"Count of sherds from Count Pyxides."
+            },
+            {
+                "name":"PotteryCountLeggedVessels",
+                "title":"PotteryCountLeggedVessels",
+                "type":"number",
+                "description":"Count of Legged Vessels."
+            },
+            {
+                "name":"PotteryFabricLeggedVessels",
+                "title":"PotteryFabricLeggedVessels",
+                "type":"string",
+                "description":"Fabric count of Legged Vessels."
+            },
+            {
+                "name":"PotterySherdCountLeggedVessels",
+                "title":"PotterySherdCountLeggedVessels",
+                "type":"number",
+                "description":"Count of sherds from Legged Vessels."
+            },
+            {
+                "name":"PotteryCountOpenShape",
+                "title":"PotteryCountOpenShape",
+                "type":"number",
+                "description":"Count of Open Shapes."
+            },
+            {
+                "name":"PotteryFabricOpenShape",
+                "title":"PotteryFabricOpenShape",
+                "type":"string",
+                "description":"Fabric count of Open Shapes."
+            },
+            {
+                "name":"PotterySherdCountOpenShape",
+                "title":"PotterySherdCountOpenShape",
+                "type":"number",
+                "description":"Count of sherds from Open Shapes."
+            },
+            {
+                "name":"PotteryCountClosedShape",
+                "title":"PotteryCountClosedShape",
+                "type":"number",
+                "description":"Count of Closed Shapes."
+            },
+            {
+                "name":"PotteryFabricClosedShape",
+                "title":"PotteryFabricClosedShape",
+                "type":"string",
+                "description":"Count of Closed Shapes."
+            },
+            {
+                "name":"PotterySherdCountClosedShape",
+                "title":"PotterySherdCountClosedShape",
+                "type":"number",
+                "description":"Count of sherds from Closed Shapes."
+            },
+            {
+                "name":"PotteryCountLids",
+                "title":"PotteryCountLids",
+                "type":"number",
+                "description":"Count of Lids."
+            },
+            {
+                "name":"PotteryFabricLids",
+                "title":"PotteryFabricLids",
+                "type":"string",
+                "description":"Fabric count of Lids."
+            },
+            {
+                "name":"PotterySherdCountLids",
+                "title":"PotterySherdCountLids",
+                "type":"number",
+                "description":"Count of sherds from Lids."
+            },
+            {
+                "name":"PotteryCountMoulds",
+                "title":"PotteryCountMoulds",
+                "type":"number",
+                "description":"Count of Moulds."
+            },
+            {
+                "name":"PotteryFabricMoulds",
+                "title":"PotteryFabricMoulds",
+                "type":"string",
+                "description":"Fabric count of Moulds."
+            },
+            {
+                "name":"PotterySherdCountMoulds",
+                "title":"PotterySherdCountMoulds",
+                "type":"number",
+                "description":"Count of sherds from Moulds."
+            },
+            {
+                "name":"PotteryCountUnknown",
+                "title":"PotteryCountUnknown",
+                "type":"number",
+                "description":"Count of Unknown."
+            },
+            {
+                "name":"PotteryFabricUnknown",
+                "title":"PotteryFabricUnknown",
+                "type":"string",
+                "description":"Count of Unknown."
+            },
+            {
+                "name":"PotterySherdCountUnknown",
+                "title":"PotterySherdCountUnknown",
+                "type":"number",
+                "description":"Count of sherds from Unknown."
+            },
+            {
+                "name":"ShapeCountComment",
+                "title":"ShapeCountComment",
+                "type":"string",
+                "description":"Comment on pottery sherd shapes."
+            },
+            {
+                "name":"ShapeFabricCorrelation",
+                "title":"ShapeFabricCorrelation",
+                "type":"string",
+                "description":"Comment on pottery fabric and shape correlation."
+            },
+            {
+                "name":"PotteryCountImpressed",
+                "title":"PotteryCountImpressed",
+                "type":"number",
+                "description":"Count of Impressed sherds."
+            },
+            {
+                "name":"PotteryCountIncised",
+                "title":"PotteryCountIncised",
+                "type":"number",
+                "description":"Count of Incised sherds."
+            },
+            {
+                "name":"PotteryCountRelief",
+                "title":"PotteryCountRelief",
+                "type":"number",
+                "description":"Count of Relief sherds."
+            },
+            {
+                "name":"PotteryCountReliefAndIncised",
+                "title":"PotteryCountReliefAndIncised",
+                "type":"number",
+                "description":"Count of Relief And Incised sherds."
+            },
+            {
+                "name":"PotteryCountPainted",
+                "title":"PotteryCountPainted",
+                "type":"number",
+                "description":"Count of Painted sherds."
+            },
+            {
+                "name":"DecorationCountComment",
+                "title":"DecorationCountComment",
+                "type":"string",
+                "description":"Comments on sherd decoration."
+            },
+            {
+                "name":"PotteryCountPlain",
+                "title":"PotteryCountPlain",
+                "type":"number",
+                "description":"Count of Plain sherds."
+            },
+            {
+                "name":"PotteryCountWhiteSlip",
+                "title":"PotteryCountWhiteSlip",
+                "type":"number",
+                "description":"Count of White Slip sherds."
+            },
+            {
+                "name":"PotteryCountDarkSlip",
+                "title":"PotteryCountDarkSlip",
+                "type":"number",
+                "description":"Count of Dark Slip sherds."
+            },
+            {
+                "name":"PotteryCountRedSlip",
+                "title":"PotteryCountRedSlip",
+                "type":"number",
+                "description":"Count of Red Slip sherds."
+            },
+            {
+                "name":"PotteryCountSlippedAndBurnished",
+                "title":"PotteryCountSlippedAndBurnished",
+                "type":"number",
+                "description":"Count of Slipped And Burnished sherds."
+            },
+            {
+                "name":"PotteryCountUrfirnis",
+                "title":"PotteryCountUrfirnis",
+                "type":"number",
+                "description":"Count of Urfirnis sherds."
+            },
+            {
+                "name":"PotteryCountScoring",
+                "title":"PotteryCountScoring",
+                "type":"number",
+                "description":"Count of sherds with Scoring."
+            },
+            {
+                "name":"SurfaceTreatmentComment",
+                "title":"SurfaceTreatmentComment",
+                "type":"string",
+                "description":"Comments on Surface Treatment."
+            },
+            {
+                "name":"PotteryCountFine",
+                "title":"PotteryCountFine",
+                "type":"number",
+                "description":"Count of fine sherds."
+            },
+            {
+                "name":"PotteryWeightFine",
+                "title":"PotteryWeightFine",
+                "type":"number",
+                "description":"Weight of fine sherds."
+            },
+            {
+                "name":"PotteryCountMedium",
+                "title":"PotteryCountMedium",
+                "type":"number",
+                "description":"Count of Medium sherds."
+            },
+            {
+                "name":"PotteryWeightMedium",
+                "title":"PotteryWeightMedium",
+                "type":"number",
+                "description":"Weight of Medium sherds."
+            },
+            {
+                "name":"PotteryCountCoarse",
+                "title":"PotteryCountCoarse",
+                "type":"number",
+                "description":"Count of Coarse sherds."
+            },
+            {
+                "name":"PotteryWeightCoarse",
+                "title":"PotteryWeightCoarse",
+                "type":"number",
+                "description":"Weight of Coarse sherds."
+            },
+            {
+                "name":"FeatureCountComment",
+                "title":"FeatureCountComment",
+                "type":"string",
+                "description":"Comments on sherd features."
+            },
+            {
+                "name":"PotteryCountDiagnosticsBeforeMending",
+                "title":"PotteryCountDiagnosticsBeforeMending",
+                "type":"number",
+                "description":"Count of Diagnostics Before Mending sherds."
+            },
+            {
+                "name":"PotteryWeightDiagnosticsBeforeMending",
+                "title":"PotteryWeightDiagnosticsBeforeMending",
+                "type":"number",
+                "description":"Weight of Diagnostics Before Mending sherds."
+            },
+            {
+                "name":"PotteryCountNonDiagnosticBeforeMending",
+                "title":"PotteryCountNonDiagnosticBeforeMending",
+                "type":"number",
+                "description":"Count of Non-Diagnostic Before Mending sherds."
+            },
+            {
+                "name":"PotteryWeightNonDiagnosticBeforeMending",
+                "title":"PotteryWeightNonDiagnosticBeforeMending",
+                "type":"number",
+                "description":"Weight of Non-Diagnostic Before Mending sherds."
+            },
+            {
+                "name":"PotteryCountSmallBeforeMending",
+                "title":"PotteryCountSmallBeforeMending",
+                "type":"number",
+                "description":"Count of Small Before Mending sherds."
+            },
+            {
+                "name":"PotteryWeightSmallBeforeMending",
+                "title":"PotteryWeightSmallBeforeMending",
+                "type":"number",
+                "description":"Weight of Small Before Mending sherds."
+            },
+            {
+                "name":"PotteryCountBeforeMending",
+                "title":"PotteryCountBeforeMending",
+                "type":"number",
+                "description":"Count Before Mending sherds."
+            },
+            {
+                "name":"PotteryWeightBeforeMending",
+                "title":"PotteryWeightBeforeMending",
+                "type":"number",
+                "description":"Weight Before Mending sherds."
+            },
+            {
+                "name":"PotteryCountAfterMending",
+                "title":"PotteryCountAfterMending",
+                "type":"number",
+                "description":"Count After Mending sherds."
+            },
+            {
+                "name":"PotteryWeightAfterMending",
+                "title":"PotteryWeightAfterMending",
+                "type":"number",
+                "description":"Weight After Mending sherds."
+            },
+            {
+                "name":"MendingComment",
+                "title":"MendingComment",
+                "type":"string",
+                "description":"Comments on mending."
+            },
+            {
+                "name":"CoverageTemporal",
+                "title":"Phase",
+                "type":"string",
+                "description":"Chronological phases in sample."
+            },
+            {
+                "name":"ChronologyComment",
+                "title":"ChronologyComment",
+                "type":"string",
+                "description":"Chronological phases commentary."
+            },
+            {
+                "name":"Date",
+                "title":"SampleDate",
+                "type":"string",
+                "description":"The date the sample was taken in format DD:MM:YY."
+            },
+            {
+                "name":"DateModified",
+                "title":"DateModified",
+                "type":"string",
+                "description":"A datetime stamp for when record was last modified."
+            },
+            {
+                "name":"DateTimeZone",
+                "title":"DateTimeZone",
+                "type":"string",
+                "description":"Names the time zone in which the record was created (and/or nodified??)."
+            },
+            {
+                "name":"IdentifierUUID",
+                "title":"IdentifierUUID",
+                "type":"string",
+                "description":"A globally unique identifier.",
+                "constraints": {
+                    "required":true,
+                    "unique":true
+                    }
+            },
+            {
+                "name":"RelationBelongsTo",
+                "title":"RelationBelongsTo",
+                "type":"string",
+                "description":"In iDig you can say a sample belongs to another or multiple other things."
+            },
+            {
+                "name":"RelationBelongsToUUID",
+                "title":"RelationBelongsToUUID",
+                "type":"string",
+                "description":"The globablly unique identifier(s) of the item(s) to which this sample belongs."
+            },
+            {
+                "name":"RelationIncludes",
+                "title":"RelationIncludes",
+                "type":"string",
+                "description":"In iDig a sample can include another or multiple other things (e.g. photographs)"
+            },
+            {
+                "name":"RelationIncludesUUID",
+                "title":"RelationIncludesUUID",
+                "type":"string",
+                "description":"The globablly unique identifier(s) of the item(s) included in this sample record."
+            },
+            {
+                "name":"Context_UUID",
+                "title":"Context_UUID",
+                "type":"string",
+                "description":"The globablly unique identifier(s) of the context"
+            },
+            {
+                "name":"ASU_UUID",
+                "title":"ASU_UUID",
+                "type":"string",
+                "description":"The globablly unique identifier(s) of the ASU if any."
+            },
+            {
+                "name":"SampleBag_UUID",
+                "title":"SampleBag_UUID",
+                "type":"string",
+                "description":"The globablly unique identifier the SampleBag for this PotteryBag."
+            }
+        ],
+"missingValues":["","N/A"],
+"primaryKey":"IdentifierUUID"
+}

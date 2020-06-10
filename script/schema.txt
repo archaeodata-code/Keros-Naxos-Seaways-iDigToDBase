@@ -1,0 +1,13 @@
+ASUs.tab:asu.json
+Cuts.tab:cut.json
+sits.tab:filldeposit.json
+ations.tab:flotation.json
+logy.tab:micromorphology.json
+otos.tab:photo.json
+tery.tab:pottery.json
+oins.tab:potteryjoin.json
+dues.tab:residue.json
+Bags.tab:samplebag.json
+inds.tab:specialfind.json
+ures.tab:structure.json
+aces.tab:surface.json

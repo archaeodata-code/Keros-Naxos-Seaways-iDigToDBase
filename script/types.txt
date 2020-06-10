@@ -1,0 +1,21 @@
+ASUs.csv:ASU.csv
+Cuts.csv:Cut.csv
+sits.csv:FillDeposit.csv
+ations.csv:Flotation.csv
+ns2016.csv:Flotation.csv
+ctions.csv:Section.csv
+logy.csv:Micromorphology.csv
+otos.csv:Photo.csv
+lans.csv:Plan.csv
+ry2016.csv:Pottery.csv
+tery.csv:Pottery.csv
+Bags.csv:SampleBag.csv
+inds.csv:SpecialFind.csv
+ures.csv:Structure.csv
+aces.csv:Surface.csv
+ints.csv:Topography.csv
+oins.csv:Pottery_Join.csv
+dues.csv:Residue.csv
+hell.csv:Shell.csv
+Bone.csv:Bone.csv
+n Bones.csv:Human_Bone.csv

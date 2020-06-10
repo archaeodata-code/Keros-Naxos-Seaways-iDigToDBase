@@ -1,0 +1,123 @@
+{
+"tablename":"allcontext",
+"csv":"All_Context.csv",
+"dbcsv": "Types/All_Context.csv",
+"status":"draft",
+"work to be done":"Validation rules",
+"fields":[
+            {
+                "name":"Source",
+                "title":"Trench",
+                "type":"string",
+                "description":"The name of the trench from which this sample was taken."
+            },
+            {
+                "name":"Type",
+                "title":"Type",
+                "type":"string",
+                "description":"The type of context"
+            },
+            {
+                "name":"Sub-Type",
+                "title":"SubType",
+                "type":"string",
+                "description":"The sub-type of context"
+            },
+            {
+                "name":"Identifier",
+                "title":"ContextID",
+                "type":"string",
+                "description":"The short ID for the context."
+            },
+            {
+                "name":"Title",
+                "title":"Title",
+                "type":"string",
+                "description":"A short title for the context."
+            },
+            {
+                "name":"Creator",
+                "title":"Creator",
+                "type":"string",
+                "description":"Initials of staff person who created this record."
+            },
+            {
+                "name":"DateEarliest",
+                "title":"DateEarliest",
+                "type":"string",
+                "description":"A datetime stamp set when the context record was opened."
+            },
+            {
+                "name":"DateLatest",
+                "title":"DateLatest",
+                "type":"string",
+                "description":"A datetime stamp set when the context record was closed."
+            },
+            {
+                "name":"Description",
+                "title":"ExcavationNote",
+                "type":"string",
+                "description":"The context and any specific conditions as described by the trench supervisor."
+            },
+            {
+                "name":"CoveragePosition",
+                "title":"CoveragePosition",
+                "type":"string",
+                "description":"The centroid of the unionized polygon using all points (not just open or close points) expressed in the local grid.  Warning: This should be converted to a WKT field prior to database load."
+            },
+            {
+                "name":"CoverageAltitude",
+                "title":"ContextAltitude",
+                "type":"string",
+                "description":"A calculated value representing the highest and lowest recorded depths of the context (relative to total station master grid)."
+            },
+            {
+                "name":"CoverageArea",
+                "title":"ContextArea",
+                "type":"string",
+                "description":"An area calculation derived from all the points taken for the context."
+            },
+            {
+                "name":"CoverageXYZ",
+                "title":"CoverageXYZ",
+                "type":"string",
+                "description":"A Well Known Text formatted description of all the points taken in the local grid system.  Warning: this does not actually differentiate consistently between opening and closing perimeters or levels.  Needs work."
+            },            
+            {
+                "name":"DateModified",
+                "title":"DateModified",
+                "type":"string",
+                "description":"A datetime stamp for when record was last modified."
+            },
+            {
+                "name":"DateTimeZone",
+                "title":"DateTimeZone",
+                "type":"string",
+                "description":"Names the time zone in which the record was created (and/or nodified??)."
+            },
+            {
+                "name":"IdentifierUUID",
+                "title":"IdentifierUUID",
+                "type":"string",
+                "description":"A globally unique identifier.",
+                "constraints": {
+                    "required":true,
+                    "unique": true
+                    }
+            },
+            {
+                "name":"RelationBelongsTo",
+                "title":"RelationBelongsTo",
+                "type":"string",
+                "description":"The name(s) of the item(s) to which this context belongs."
+            },
+            {
+                "name":"RelationBelongsToUUID",
+                "title":"RelationBelongsToUUID",
+                "type":"string",
+                "description":"The globablly unique identifier(s) of the item(s) to which this context belongs."
+            }
+        ],
+"missingValues":[""],
+"primarykey":["IdentifierUUID"]
+}

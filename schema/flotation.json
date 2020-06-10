@@ -1,0 +1,164 @@
+{
+"tablename":"flotation",
+"csv":"Flotation.csv",
+"dbcsv":"Types/Flotation.csv",
+"status":"draft",
+"note": "In theory, the foreign key for this should be the UUID for the Context from which the sample is taken.  However, given the iDig processing model, the foreign key is the SampleBag UUID.",
+"work_to_be_done":"Validation rules",
+"fields":[
+            {
+                "name":"Source",
+                "title":"Trench",
+                "type":"string",
+                "description":"The name of the trench from which this sample was taken."
+            },
+            {
+                "name":"Identifier",
+                "title":"Identifier",
+                "type":"string",
+                "description":"Identifier on a sample record is a sequential number assigned per context at the time the sample is taken.",
+                "constraints":{
+                    "required":true,
+                    "unique": true
+                }
+            },
+            {
+                "name":"DateEarliest",
+                "title":"DateTimeStamp",
+                "type":"string",
+                "description":"A datetime stamp set when the sample record was created."
+            },
+            {
+                "name":"Creator",
+                "title":"Creator",
+                "type":"string",
+                "description":"Initials of staff person who created this record."
+            },
+            {
+                "name":"FlotationVolume",
+                "title":"FlotationVolume",
+                "type":"string",
+                "description":"The volume of sample taken."
+            },
+            {
+                "name":"FlotationShell",
+                "title":"FlotationShell",
+                "type":"string",
+                "description":"The weight of shells in the sample."
+            },
+            {
+                "name":"FlotationFish",
+                "title":"FlotationFish",
+                "type":"string",
+                "description":"The count of fish bone in the sample."
+            },
+            {
+                "name":"FlotationBone",
+                "title":"FlotationBone",
+                "type":"string",
+                "description":"The count of non-human bone in the sample."
+            },
+            {
+                "name":"FlotationCharcoal",
+                "title":"FlotationCharcoal",
+                "type":"string",
+                "description":"The count of charcoal  in the sample."
+            },
+            {
+                "name":"FlotationSeeds",
+                "title":"FlotationSeeds",
+                "type":"string",
+                "description":"The type of seeds in the sample."
+            },
+            {
+                "name":"FlotationObsidian",
+                "title":"FlotationObsidian",
+                "type":"string",
+                "description":"The count and type of obsidian in the sample."
+            },
+            {
+                "name":"FlotationPottery",
+                "title":"FlotationPottery",
+                "type":"string",
+                "description":"The count of pottery in the sample."
+            },
+            {
+                "name":"FlotationMetal",
+                "title":"FlotationMetal",
+                "type":"string",
+                "description":"The count and type of metal in the sample."
+            },
+            {
+                "name":"FlotationSpecial",
+                "title":"FlotationSpecial",
+                "type":"string",
+                "description":"A reference to any special find(s) from the sample."
+            },
+            {
+                "name":"FlotationFlotCharcoal",
+                "title":"FlotationFlotCharcoal",
+                "type":"string",
+                "description":"The charcoal from the flotation of the sample."
+            },
+            {
+                "name":"FlotationFlotSeeds",
+                "title":"FlotationFlotSeeds",
+                "type":"string",
+                "description":"The charcoal from the flotation of the sample."
+            },
+            {
+                "name":"Date",
+                "title":"SampleDate",
+                "type":"string",
+                "description":"The date the sample was taken in format DD:MM:YY."
+            },
+            {
+                "name":"DateModified",
+                "title":"DateModified",
+                "type":"string",
+                "description":"A datetime stamp for when record was last modified."
+            },
+            {
+                "name":"DateTimeZone",
+                "title":"DateTimeZone",
+                "type":"string",
+                "description":"Names the time zone in which the record was created (and/or nodified??)."
+            },
+            {
+                "name":"IdentifierUUID",
+                "title":"IdentifierUUID",
+                "type":"string",
+                "description":"A globally unique identifier.",
+                "constraints": {
+                    "required":true,
+                    "unique":true
+                    }
+            },
+            {
+                "name":"RelationBelongsTo",
+                "title":"RelationBelongsTo",
+                "type":"string",
+                "description":"In iDig you can say a sample belongs to another or multiple other things."
+            },
+            {
+                "name":"RelationBelongsToUUID",
+                "title":"RelationBelongsToUUID",
+                "type":"string",
+                "description":"The globablly unique identifier(s) of the item(s) to which this sample belongs."
+            },
+            {
+                "name":"RelationIncludes",
+                "title":"RelationIncludes",
+                "type":"string",
+                "description":"In iDig a sample can include another or multiple other things (e.g. photographs)"
+            },
+            {
+                "name":"RelationIncludesUUID",
+                "title":"RelationIncludesUUID",
+                "type":"string",
+                "description":"The globablly unique identifier(s) of the item(s) included in this sample record."
+            }
+        ],
+"missingValues":[""],
+"primaryKey":"IdentifierUUID"
+}

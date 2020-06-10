@@ -1,0 +1,62 @@
+{
+"status":"draft",
+"work to be done":"",
+"dbschema":[
+            {
+                "schema":"dbschema/db_allcontext.json",
+                "table":"all_context"
+             },
+             {
+                "schema":"asu.json",
+                "table":"asu"
+             },
+             {
+                "schema":"cut.json",
+                "table":"cut"
+             },
+             {
+                "schema":"filldeposit.json",
+                "table":"fill_deposit"
+             },
+             {
+                "schema":"flotation.json",
+                "table":"flotation"
+             },
+             {
+                "schema":"micromorphology.json",
+                "table":"micromorphology"
+             },
+             {
+                "schema":"dbschema/db_photo.json",
+                "table":"photo"
+             },             
+             {
+                "schema":"dbschema/db_pottery.json",
+                "table":"pottery"
+             },             
+             {
+                "schema":"potteryjoin.json",
+                "table":"pottery_join"
+             },             {
+                "schema":"residue.json",
+                "table":"residue"
+             },
+             {
+                "schema":"dbschema/db_samplebag.json",
+                "table":"sample_bag"
+             },
+             {
+                "schema":"dbschema/db_specialfind.json",
+                "table":"special_find"
+             },
+             {
+                "schema":"structure.json",
+                "table":"structure"
+             },
+             {
+                "schema":"surface.json",
+                "table":"surface"
+             }
+        ]
+    }
+

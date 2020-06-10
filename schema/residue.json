@@ -1,0 +1,143 @@
+{
+"tablename":"residue",
+"csv":"Residue.csv",
+"dbcsv": "Types/Residue.csv",
+"status":"draft",
+"note": "",
+"work_to_be_done":"",
+"fields":[
+            {
+                "name":"Source",
+                "title":"Trench",
+                "type":"string",
+                "description":"The name of the trench from which this sample was taken."
+            },
+            {
+                "name":"Type",
+                "title":"Type",
+                "type":"string",
+                "description":"The type of item.",
+                "constraints":{
+                    "required":true
+                }
+            },
+            {
+                "name":"Subtype",
+                "title":"Subtype",
+                "type":"string",
+                "description":"The subtype of item."
+            },
+            {
+                "name":"Identifier",
+                "title":"Identifier",
+                "type":"string",
+                "description":"Identifier on a sample record is a sequential number assigned per context at the time the sample is taken.",
+                "constraints":{
+                    "required":true,
+                    "unique": true
+                }
+            },
+            {
+                "name":"ContextID",
+                "title":"Context",
+                "type":"string",
+                "description":"The name of the context(s) from which the sample is taken."
+            },
+            {
+                "name":"DateEarliest",
+                "title":"DateTimeStamp",
+                "type":"datetime",
+                "description":"A datetime stamp set when the sample record was created."
+            },
+            {
+                "name":"Creator",
+                "title":"Creator",
+                "type":"string",
+                "description":"Initials of staff person who created this record."
+            },
+            {
+                "name":"Dry",
+                "title":"Dry",
+                "type": "string",
+                "description":"Yes or No was a dry residue sample taken."
+            },
+            {
+                "name":"Wet",
+                "title":"Wet",
+                "type": "string",
+                "description":"Yes or No was a wet residue sample taken."
+            },    
+            {
+                "name":"Soil",
+                "title":"Soil",
+                "type": "string",
+                "description":"Yes or No was a soil sample taken for further residue analysis."
+            },
+            {
+                "name":"Lipid",
+                "title":"Lipid",
+                "type": "string",
+                "description":"Yes or No was a lipid analysis sample taken."
+            },
+            {
+                "name":"Description",
+                "title":"Description",
+                "type":"string",
+                "description":"Optional description of sample."
+            },                       
+            {
+                "name":"Date",
+                "title":"SampleDate",
+                "type":"string",
+                "description":"The date the sample was taken in format DD:MM:YY."
+            },
+            {
+                "name":"DateModified",
+                "title":"DateModified",
+                "type":"datetime",
+                "description":"A datetime stamp for when record was last modified."
+            },
+            {
+                "name":"DateTimeZone",
+                "title":"DateTimeZone",
+                "type":"string",
+                "description":"Names the time zone in which the record was created (and/or nodified??)."
+            },
+            {
+                "name":"IdentifierUUID",
+                "title":"IdentifierUUID",
+                "type":"string",
+                "description":"A globally unique identifier.",
+                "constraints": {
+                    "required":true,
+                    "unique":true
+                    }
+            },
+            {
+                "name":"RelationBelongsTo",
+                "title":"RelationBelongsTo",
+                "type":"string",
+                "description":"In iDig you can say a sample belongs to another or multiple other things."
+            },
+            {
+                "name":"RelationBelongsToUUID",
+                "title":"RelationBelongsToUUID",
+                "type":"string",
+                "description":"The globablly unique identifier(s) of the item(s) to which this sample belongs."
+            },
+            {
+                "name":"RelationIncludes",
+                "title":"RelationIncludes",
+                "type":"string",
+                "description":"In iDig a sample can include another or multiple other things (e.g. photographs)"
+            },
+            {
+                "name":"RelationIncludesUUID",
+                "title":"RelationIncludesUUID",
+                "type":"string",
+                "description":"The globablly unique identifier(s) of the item(s) included in this sample record."
+            }
+        ],
+"missingValues":[""],
+"primaryKey":"IdentifierUUID"
+}

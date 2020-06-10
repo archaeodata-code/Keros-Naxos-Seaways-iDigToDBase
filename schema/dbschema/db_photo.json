@@ -1,0 +1,122 @@
+{
+"tablename":"photo",
+"csv": "Types/Photo.csv",
+"dbcsv":"Types/Photo2.csv",
+"status":"draft",
+"note": "",
+"work_to_be_done":"Photos are implemented in an atypical fashion in iDig; better naming needed",
+"fields":[
+            {
+                "name":"Source",
+                "title":"Trench",
+                "type":"string",
+                "description":"The name of the trench from which this sample was taken."
+            },
+            {
+                "name":"Type",
+                "title":"Type",
+                "type":"string",
+                "description":"The type of item."
+            },            
+            {
+                "name":"Identifier",
+                "title":"Sample Number",
+                "type":"string",
+                "description":"Sample number is a sequential number assigned per context at the time the sample is taken."
+            },
+            {
+                "name":"FileNames",
+                "title":"FileNames",
+                "type":"string",
+                "description":"Used when a photo taken outside iPad is linked to context"
+            },
+            {
+                "name":"Title",
+                "title":"Title",
+                "type":"string",
+                "description":"A short tile for the photograph."
+            },
+            {
+                "name":"DateEarliest",
+                "title":"DateTimeStamp",
+                "type":"datetime",
+                "description":"A datetime stamp set when the sample record was created."
+            },
+            {
+                "name":"RelationAttachments",
+                "title":"RelationAttachments",
+                "type":"string",
+                "description":"A serialized strinng field with image name and datetimestamp."
+            },
+            {
+                "name":"DateModified",
+                "title":"DateModified",
+                "type":"datetime",
+                "description":"A datetime stamp for when record was last modified."
+            },
+            {
+                "name":"DateTimeZone",
+                "title":"DateTimeZone",
+                "type":"string",
+                "description":"Names the time zone in which the record was created (and/or nodified??)."
+            },
+            {
+                "name":"FormatImage",
+                "title":"ImageFileName",
+                "type":"string",
+                "description":"Filename made up of an UUID with the suffix .jpg"
+            },
+            {
+                "name":"FormatImageHeight",
+                "title":"FormatImageHeight",
+                "type":"string",
+                "description":"Height of image in pixels."
+            },
+            {
+                "name":"FormatImageWidth",
+                "title":"FormatImageWidth",
+                "type":"string",
+                "description":"Width of image in pixels."
+            },
+            {
+                "name":"IdentifierUUID",
+                "title":"IdentifierUUID",
+                "type":"string",
+                "description":"A globally unique identifier set outside iDig.",
+                "constraints": {
+                    "required":true
+                    }
+            },      
+            {
+                "name":"RelationBelongsTo",
+                "title":"RelationBelongsTo",
+                "type":"string",
+                "description":"In iDig you can say a sample belongs to another or multiple other things."
+            },
+            {
+                "name":"RelationBelongsToUUID",
+                "title":"RelationBelongsToUUID",
+                "type":"string",
+                "description":"The globablly unique identifier(s) of the item(s) to which this sample belongs."
+            },
+            {
+                "name":"RelationIncludes",
+                "title":"RelationIncludes",
+                "type":"string",
+                "description":"In iDig a sample can include another or multiple other things (e.g. photographs)"
+            },
+            {
+                "name":"RelationIncludesUUID",
+                "title":"RelationIncludesUUID",
+                "type":"string",
+                "description":"The globablly unique identifier(s) of the item(s) included in this sample record."
+            },
+            {
+                "name":"iDigIdentifierUUID",
+                "title":"iDigIdentifierUUID",
+                "type":"string",
+                "description":"The globablly unique identifier set by iDig."
+            }
+        ],
+"missingValues":[""]
+}

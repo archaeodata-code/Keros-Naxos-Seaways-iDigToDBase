@@ -1,0 +1,147 @@
+{
+"tablename":"samplebag",
+"csv":"SampleBag2.csv",
+"dbcsv":"LoadCSVs/SampleBag2.csv",
+"status":"draft",
+"NxmCommentary": "This schema will be used to validate at the trench level and hence I am setting the sample number to be unique as a constraints.  Also, I have a maxLength constraint on RelationBelongsTo to show where we have attached a sample bag to more than one item but there are so many instances that it is rather pointless - I will strip that field later in the python code so as to create a valid foreign key",
+"work_to_be_done":"",
+"fields":[
+            {
+                "name":"Source",
+                "title":"Trench",
+                "type":"string",
+                "description":"The name of the trench from which this sample was taken.",
+                "constraints": {
+                    "required":true
+                    }                
+            },
+            {
+                "name":"Type",
+                "title":"Type",
+                "type":"string",
+                "description":"The type of item.",
+                "constraints": {
+                    "required":true
+                    }                
+            },
+            {
+                "name":"Subtype",
+                "title":"Subtype",
+                "type":"string",
+                "description":"The subtype of item."
+            },            
+            {
+                "name":"Identifier",
+                "title":"SampleNumber",
+                "type":"string",
+                "description":"Sample number is a sequential number assigned per trench at the time the sample is taken."              
+            },
+            {
+                "name":"Title",
+                "title":"SampleType",
+                "type":"string",
+                "description":"Names the sample type."
+            },
+            {
+                "name":"Origin",
+                "title":"Origin",
+                "type":"string",
+                "description":"The processing step from which the sample was taken (e.g. excavation or sieving, etc."
+            },
+            {
+                "name":"DateEarliest",
+                "title":"DateTimeStamp",
+                "type":"string",
+                "description":"A datetime stamp set when the sample record was created."
+            },
+            {
+                "name":"Creator",
+                "title":"Creator",
+                "type":"string",
+                "description":"Initials of staff person who created this record."
+            },
+            {
+                "name":"Description",
+                "title":"Description",
+                "type":"string",
+                "description":"Optional description of sample."
+            },
+            {
+                "name":"Date",
+                "title":"Date",
+                "type":"string",
+                "description":"The date the sample was taken in format DD:MM:YY."
+            },
+            {
+                "name":"DateModified",
+                "title":"DateModified",
+                "type":"string",
+                "description":"A datetime stamp for when record was last modified."
+            },
+            {
+                "name":"DateTimeZone",
+                "title":"DateTimeZone",
+                "type":"string",
+                "description":"Names the time zone in which the record was created (and/or nodified??)."
+            },
+            {
+                "name":"IdentifierUUID",
+                "title":"IdentifierUUID",
+                "type":"string",
+                "description":"A globally unique identifier.",
+                "constraints": {
+                    "required":true,
+                    "unique":true
+                    }
+            },
+            {
+                "name":"RelationBelongsTo",
+                "title":"RelationBelongsTo",
+                "type":"string",
+                "description":"In iDig you can say a sample belongs to another or multiple other things."
+            },
+            {
+                "name":"RelationBelongsToUUID",
+                "title":"RelationBelongsToUUID",
+                "type":"string",
+                "description":"The global unique identifier(s) of the item(s) to which this sample belongs."
+            },
+            {
+                "name":"RelationIncludes",
+                "title":"RelationIncludes",
+                "type":"string",
+                "description":"In iDig a sample can include another or multiple other things (e.g. photographs)"
+            },
+            {
+                "name":"RelationIncludesUUID",
+                "title":"RelationIncludesUUID",
+                "type":"string",
+                "description":"The globablly unique identifier(s) of the item(s) included in this sample record."
+            },
+            {
+                "name":"Context_UUID",
+                "title":"Context_UUID",
+                "type":"string",
+                "description":"The globablly unique identifier of the Context"
+            },
+            {
+                "name":"ASU_UUID",
+                "title":"ASU_UUID",
+                "type":"string",
+                "description":"The globablly unique identifier of the ASU (if this is an ASU)"
+            },
+            {
+                "name":"FlotationBag_UUID",
+                "title":"FlotationBag_UUID",
+                "type":"string",
+                "description":"The globablly unique identifier of the Flotation Bag this came from (if relevant)"
+            },
+            {
+                "name":"PotteryBag_UUID",
+                "title":"PotteryBag_UUID",
+                "type":"string",
+                "description":"The globablly unique identifier of the PotteryBag this came from (if relevant)"
+            }
+        ],
+"missingValues":[""]
+}

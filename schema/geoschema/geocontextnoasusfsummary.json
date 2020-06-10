@@ -1,0 +1,92 @@
+{
+    "layername":"context_sf_summary",
+    "geocsv": "data/GISLoads/GeoContextNoASUSpecialFindSummary.csv",
+    "status":"draft",
+    "work to be done":"",
+    "fields": [
+        {
+            "name": "Source",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "Type",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "Sub-Type",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "Identifier",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "Title",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "Description",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "IdentifierUUID",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "Context_UUID",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "ASU_UUID",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "metallurgical",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "obsidian",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "kouphonisi pebble",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "stone disc",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "worked stone",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "spool_whorl",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "opening",
+            "type": "string",
+            "format": "default"
+        }
+    ],
+    "missingValues": [
+        "",
+        "N/A"
+    ]
+}

@@ -1,0 +1,38 @@
+
+{
+"tablename":"",
+"csv":"xxxxxx.csv",
+"dbcsv":"xxxxxx.csv",
+"status":"",
+"note":""
+"work to be done":"comments on next steps"
+"fields":[
+        {
+        "name":"",
+        "title":"",
+        "type":"",
+        "format":"",
+        "description":"",
+        "constraints": {}
+        },
+        {
+        "name":"",
+        "title":"",
+        "type":"",
+        "format":"",
+        "description":"",
+        "constraints": {}
+        }
+        ],
+"missingValues":[""],
+"primaryKey":"",
+"foreignKeys":[
+    {
+        "fields":"",
+        "reference": {
+            "resource":"",
+            "fields":""
+        }
+    }
+]
+}

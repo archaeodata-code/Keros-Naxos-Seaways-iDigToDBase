@@ -1,7 +1,5 @@
 # iDig To Database (and GeoPackage)
 
->This document is written in Markdown.  To read a formatted version of it you would need to copy and paste it into an online Markdown formatter [try this:] (http://tmpvar.com/markdown.html) or search for one online, or have a text editor that can toggle to formatted Markdown.
-
 ### TL;DR
 1. skip to *Python Version and Modules*
 2. Make sure your directory structure is good
@@ -100,8 +98,7 @@ In addition to modules installed by default, the following are also required:
 4. [Good Tables] (https://github.com/frictionlessdata/goodtables-py) for data validation.
 5. [Shapely] (https://shapely.readthedocs.io/en/latest/) and [PyShp] (https://pypi.org/project/pyshp/#examples) for working geometry at a basic level (likely just need one but that will require some code rework).
 6. [SQLAlchemy] (https://www.sqlalchemy.org) - for database connectivity and build
-4. JSON, SQLite, CSV etc come with your basic Python installation (at least in 3.7)
-5. 
+7. JSON, SQLite, CSV etc come with your basic Python installation (at least in 3.7)
 
 ### Specifically On Database and GeoPackage
 Important points:
@@ -120,3 +117,6 @@ As developed the code works with the folder structure that was part of this zip 
 
 1. ### Contributors & Contact
 Nathan Meyer [orcid] (https://orcid.org/0000-0001-6847-8199)
+ 
+
+

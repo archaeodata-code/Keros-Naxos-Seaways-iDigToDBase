@@ -1,0 +1,18 @@
+ASUs.csv:asu.json
+Cuts.csv:cut.json
+sits.csv:filldeposit.json
+ations.csv:flotation.json
+logy.csv:micromorphology.json
+otos.csv:photo.json
+tery.csv:pottery.json
+Bags.csv:samplebag.json
+inds.csv:specialfind.json
+ures.csv:structure.json
+aces.csv:surface.json
+oins.csv:potteryjoin.json
+dues.csv:residue.json
+hell.csv:shell.json
+Bone.csv:bone.json
+n Bones.csv:humanbone.json
+ry2016.csv:pottery2016.json
+ns2016.csv:flotation.json

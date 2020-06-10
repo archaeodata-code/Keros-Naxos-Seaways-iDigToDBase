@@ -1,0 +1,76 @@
+
+{
+"tablename":"pottery_join",
+"csv":"Pottery_Join.csv",
+"dbcsv": "Types/Pottery_Join.csv",
+"status":"draft",
+"work to be done":"",
+"fields":[
+            {
+                "name":"Source",
+                "title":"Trench",
+                "type":"string",
+                "description":"The name of the trench from which this sample was taken."
+            },
+            {
+                "name":"Type",
+                "title":"Type",
+                "type":"string",
+                "description":"The type of item."
+            },
+            {
+                "name":"Subtype",
+                "title":"SubType",
+                "type":"string",
+                "description":"The subtype of item."
+            },
+            {
+                "name":"Title",
+                "title":"Title",
+                "type":"string",
+                "description":"A short title for the pottery join."
+            },            
+            {
+                "name":"DateEarliest",
+                "title":"DateEarliest",
+                "type":"datetime",
+                "description":"A datetime stamp set when the record was opened."
+            },            
+            {
+                "name":"DateModified",
+                "title":"DateModified",
+                "type":"datetime",
+                "description":"A datetime stamp for when record was last modified."
+            },
+            {
+                "name":"DateTimeZone",
+                "title":"DateTimeZone",
+                "type":"string",
+                "description":"Names the time zone in which the record was created (and/or nodified??)."
+            },
+            {
+                "name":"IdentifierUUID",
+                "title":"IdentifierUUID",
+                "type":"string",
+                "description":"A globally unique identifier.",
+                "constraints": {
+                    "required":true,
+                    "unique":true
+                    }
+            },
+            {
+                "name":"RelationIncludes",
+                "title":"RelationIncludes",
+                "type":"string",
+                "description":"In iDig a sample can include another or multiple other things (e.g. photographs)"
+            },
+            {
+                "name":"RelationIncludesUUID",
+                "title":"RelationIncludesUUID",
+                "type":"string",
+                "description":"The globablly unique identifier(s) of the item(s) included in this sample record."
+            }
+        ],
+"missingValues":[""],
+"primaryKey":"IdentifierUUID"
+}

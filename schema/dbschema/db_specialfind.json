@@ -1,0 +1,219 @@
+{
+"tablename":"specialfind",
+"csv":"SpecialFind.csv",
+"dbcsv":"LoadCSVs/SpecialFind2.csv",
+"status":"draft",
+"work to be done":"The geometry fields are not useful as they are now.  Programming is needed to process the csv file before database load - the processing would create new geometry fields that are Well Known Text representations of each unique set of points (opening, closing, other).  Also need to add foreign keys. Also, there are fields I am abandoning in the CSV that we may want such as Residue Analysis and Origin and ACRcomment",
+"fields":[
+            {
+                "name":"Source",
+                "title":"Trench",
+                "type":"string",
+                "description":"The name of the trench from which this sample was taken."
+            },
+            {
+                "name":"Type",
+                "title":"Type",
+                "type":"string",
+                "description":"The type of item.",
+                "constraints":{
+                    "required":true
+                    }
+            },
+            {
+                "name":"Identifier",
+                "title":"Identifier",
+                "type":"string",
+                "description":"Identifier on a sample record is a sequential number assigned per context at the time the sample is taken.",
+                "constraints":{
+                    "required":true,
+                    "unique": true
+                    }
+            },
+            {
+                "name":"Title",
+                "title":"SubType",
+                "type":"string",
+                "description":"The type of special find.",
+                "constraints": {
+                    "enum":["metals and metallurgical","worked stone","stone disc","marble figurine","stone vessel","spool","Kouphonisi limestone pebble","unworked imported stone","worked bone","worked shell","bead","obsidian","architectural element","spindle whorl","worked sherd","metallurgical ceramic","matt impression","other ceramic","ERROR","Discarded During Study Season"]
+                }
+            },
+            {
+                "name":"Class",
+                "title":"Class",
+                "type":"string",
+                "description": "Indicating of class within the type."
+            },
+            {
+                "name":"Material",
+                "title":"Material",
+                "type":"string",
+                "description": "Indicating type of raw material."
+            },
+            {
+                "name":"SpecialistComment",
+                "title":"SpecialistComment",
+                "type":"string",
+                "description": "Any further, detailed comments from specialist."
+            },
+            {
+                "name":"SpecialistIntitials",
+                "title":"SpecialistInitials",
+                "type":"string",
+                "description": "Specialist initials"
+            },
+            {
+                "name":"DateEarliest",
+                "title":"DateEarliest",
+                "type":"datetime",
+                "description":"A datetime stamp set when the context record was opened."
+            },
+            {
+                "name":"Creator",
+                "title":"Creator",
+                "type":"string",
+                "description":"Initials of staff person who created this record."
+            },
+            {
+                "name":"Description",
+                "title":"Description",
+                "type":"string",
+                "description":"Short description of special find."
+            },
+            {
+                "name":"Length",
+                "title":"Length",
+                "type":"string",
+                "description":"Max length of special find."
+            },
+            {
+                "name":"Width",
+                "title":"Width",
+                "type":"string",
+                "description":"Max width of special find."
+            },
+            {
+                "name":"Height",
+                "title":"Height",
+                "type": "string",
+                "description":"Maximum height of the special find."
+            },
+            {
+                "name":"Thickness",
+                "title":"Thickness",
+                "type": "string",
+                "description":"Maximum thickness of the special find."
+            },
+            {
+                "name":"Diameter",
+                "title":"Diameter",
+                "type": "string",
+                "description":"Diameter of special find."
+            },
+            {
+                "name":"EstimatedDiameter",
+                "title":"EstimatedDiameter",
+                "type": "string",
+                "description":"Estimated diameter of special find."
+            }, 
+            {
+                "name":"MaximumDimension",
+                "title":"MaximumDimension",
+                "type": "string",
+                "description":"Maximum dimension of special find."
+            },
+            {
+                "name":"Weight",
+                "title":"Weight",
+                "type": "string",
+                "description":"Weight of special find."
+            },
+            {
+                "name":"CoverageTemporal",
+                "title":"Phase",
+                "type": "string",
+                "description":"Temporal phase of the special find."
+            }, 
+            {
+                "name":"CoverageAltitude",
+                "title":"ContextDepth",
+                "type":"string",
+                "description":"A calculated value representing the highest and lowest recorded depths of the context (relative to total station master grid)."
+            },
+            {
+                "name":"CoverageXYZ",
+                "title":"CoverageXYZ",
+                "type":"string",
+                "description":"A Well Known Text formatted description of all the points taken in the local grid system.  Warning: this does not actually differentiate consistently between opening and closing perimeters or levels.  Needs work."
+            },
+            {
+                "name":"CoverageGEO",
+                "title":"CoverageGeo",
+                "type":"string",
+                "description":"A Well Known Text formatted description of all points take re-expressed from local grid to universal grid.  Warning:  this does not differentiate consistently between opening and closing levels and perimeters.  Needs work."
+            },
+            {
+                "name":"CoveragePosition",
+                "title":"CoverageCentroid",
+                "type":"string",
+                "description":"The centroid of the unionized polygon using all points (not just open or close points) expressed in the local grid.  Warning: This should be converted to a WKT field prior to database load."
+            },            
+            {
+                "name":"DateModified",
+                "title":"DateModified",
+                "type":"datetime",
+                "description":"A datetime stamp for when record was last modified."
+            },
+            {
+                "name":"DateTimeZone",
+                "title":"DateTimeZone",
+                "type":"string",
+                "description":"Names the time zone in which the record was created (and/or nodified??)."
+            },
+            {
+                "name":"IdentifierUUID",
+                "title":"IdentifierUUID",
+                "type":"string",
+                "description":"A globally unique identifier."
+            },
+            {
+                "name":"RelationBelongsTo",
+                "title":"RelationBelongsTo",
+                "type":"string",
+                "description":"The context to which the special find belongs."
+            },
+            {
+                "name":"RelationBelongsToUUID",
+                "title":"RelationBelongsToUUID",
+                "type":"string",
+                "description":"The globablly unique identifier for the context to which the special find belongs."
+            },
+            {
+                "name":"Context_UUID",
+                "title":"Context_UUID",
+                "type":"string",
+                "description":"The globablly unique identifier of the Context"
+            },
+            {
+                "name":"ASU_UUID",
+                "title":"ASU_UUID",
+                "type":"string",
+                "description":"The globablly unique identifier of the ASU (if this is an ASU)"
+            },
+            {
+                "name":"FlotationBag_UUID",
+                "title":"FlotationBag_UUID",
+                "type":"string",
+                "description":"The globablly unique identifier of the Flotation Bag this came from (if relevant)"
+            },
+            {
+                "name":"PotteryBag_UUID",
+                "title":"PotteryBag_UUID",
+                "type":"string",
+                "description":"The globablly unique identifier of the PotteryBag this came from (if relevant)"
+            }
+        ],
+"missingValues":[""],
+"primaryKey":"IdentifierUUID"
+}

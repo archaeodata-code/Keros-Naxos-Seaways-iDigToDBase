@@ -1,0 +1,392 @@
+{
+    "layername":"context_phase_pottery",
+    "geocsv": "data/GISLoads/GeoContextNoASUWithPhaseAndPotteryCounts.csv",
+    "status":"draft",
+    "work to be done":"",
+    "fields": [
+        {
+            "name": "Source",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "Type",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "Sub-Type",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "Identifier",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "Title",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "Description",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "IdentifierUUID",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "Pre-Phase A",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "Phase A",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "Phase A/B",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "Phase B",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "Phase B/C",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "Phase C",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "Phase A-C",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "Post-Phase C",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "Other",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "Period",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "Kastri",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "PotterySherdSizes",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "PotteryWear",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "PotteryBurning",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "Source",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "ContextID",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "PotteryCountBlueSchist",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "PotteryCountRedSchist",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "PotteryCountBlueAndRedSchist",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "PotteryCountTalcWare",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "PotteryCountPaleVolcanic",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "PotteryCountMicaceousSchist",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "PotteryCountCalciteTemper",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "PotteryCountGranitic",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "PotteryCountSandy",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "PotteryCountBiotiteAmphibole",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "PotteryCountOtherFabric",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "PotteryCountBakingPansOrHearths",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "PotteryCountCooking",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "PotteryCountStorageOrPithoidJars",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "PotteryCountBraziers",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "PotteryCountSauceBoats",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "PotteryCountBowls",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "PotteryCountCups",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "PotteryCountDepas",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "PotteryCountTankards",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "PotteryCountConicalNeckedJars",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "PotteryCountBasins",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "PotteryCountJugs",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "PotteryCountBeakedJug",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "PotteryCountPyxides",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "PotteryCountLeggedVessels",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "PotteryCountOpenShape",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "PotteryCountClosedShape",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "PotteryCountLids",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "PotteryCountMoulds",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "PotteryCountUnknown",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "PotteryCountImpressed",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "PotteryCountIncised",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "PotteryCountRelief",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "PotteryCountReliefAndIncised",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "PotteryCountPainted",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "PotteryCountPlain",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "PotteryCountWhiteSlip",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "PotteryCountDarkSlip",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "PotteryCountRedSlip",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "PotteryCountSlippedAndBurnished",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "PotteryCountUrfirnis",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "PotteryCountScoring",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "PotteryCountFine",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "PotteryWeightFine",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "PotteryCountMedium",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "PotteryWeightMedium",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "PotteryCountCoarse",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "PotteryWeightCoarse",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "PotteryCountBeforeMending",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "PotteryWeightBeforeMending",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "Context_UUID",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "opening",
+            "type": "string",
+            "format": "default"
+        }
+    ],
+    "missingValues": [
+        "",
+        "N/A"
+    ]
+}

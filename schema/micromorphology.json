@@ -1,0 +1,119 @@
+{
+"tablename":"micromorphology",
+"csv":"Micromorphology.csv",
+"dbcsv":"Types/Micromorphology.csv",
+"status":"draft",
+"note": "the information design for the micromorph samples is flawed.  A single sample can cross multiple contexts (the only sample that can) and this is not implemented well in iDig. Likely we should ignore the data quality issues but build some mapping from contexts to micromorph samples in a many to many table.",
+"work_to_be_done":"Validation rules, programming to create a foreign key",
+"fields":[
+            {
+                "name":"Source",
+                "title":"Trench",
+                "type":"string",
+                "description":"The name of the trench from which this sample was taken."
+            },
+            {
+                "name":"Type",
+                "title":"Type",
+                "type":"string",
+                "description":"The type of item.",
+                "constraints":{
+                    "required":true
+                }
+            },
+            {
+                "name":"Subtype",
+                "title":"Subtype",
+                "type":"string",
+                "description":"The subtype of item."
+            },
+            {
+                "name":"Identifier",
+                "title":"Identifier",
+                "type":"string",
+                "description":"Identifier on a sample record is a sequential number assigned per context at the time the sample is taken.",
+                "constraints":{
+                    "required":true,
+                    "unique": true
+                }
+            },
+            {
+                "name":"ContextID",
+                "title":"ContextID",
+                "type":"string",
+                "description":"The name of the context(s) from which the sample is taken.  This is not a reliable foreign key across trenches."
+            },
+            {
+                "name":"DateEarliest",
+                "title":"DateEarliest",
+                "type":"datetime",
+                "description":"A datetime stamp set when the sample record was created."
+            },
+            {
+                "name":"Creator",
+                "title":"Creator",
+                "type":"string",
+                "description":"Initials of staff person who created this record."
+            },
+            {
+                "name":"Description",
+                "title":"Description",
+                "type":"string",
+                "description":"A note describing sample as taken in the field."
+            },
+            {
+                "name":"Date",
+                "title":"Date",
+                "type":"string",
+                "description":"The date the sample was taken in format DD:MM:YY."
+            },
+            {
+                "name":"DateModified",
+                "title":"DateModified",
+                "type":"datetime",
+                "description":"A datetime stamp for when record was last modified."
+            },
+            {
+                "name":"DateTimeZone",
+                "title":"DateTimeZone",
+                "type":"string",
+                "description":"Names the time zone in which the record was created (and/or nodified??)."
+            },
+            {
+                "name":"IdentifierUUID",
+                "title":"IdentifierUUID",
+                "type":"string",
+                "description":"A globally unique identifier.",
+                "constraints": {
+                    "required":true,
+                    "unique":true
+                    }
+            },
+            {
+                "name":"RelationBelongsTo",
+                "title":"RelationBelongsTo",
+                "type":"string",
+                "description":"In iDig you can say a sample belongs to another or multiple other things. This should include the SampleBag but may include also the Context."
+            },
+            {
+                "name":"RelationBelongsToUUID",
+                "title":"RelationBelongsToUUID",
+                "type":"string",
+                "description":"The globablly unique identifier(s) of the item(s) to which this sample belongs."
+            },
+            {
+                "name":"RelationIncludes",
+                "title":"RelationIncludes",
+                "type":"string",
+                "description":"In iDig a sample can include another or multiple other things (e.g. photographs)"
+            },
+            {
+                "name":"RelationIncludesUUID",
+                "title":"RelationIncludesUUID",
+                "type":"string",
+                "description":"The globablly unique identifier(s) of the item(s) included in this sample record."
+            }
+        ],
+"missingValues":[""],
+"primaryKey":"IdentifierUUID"
+}
