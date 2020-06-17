@@ -1,0 +1,35 @@
+{
+"status":"draft",
+"work to be done":"",
+"dbschema":[
+             {
+                "schema":"excavation_report/er_asu.json",
+                "report":"asu"
+             },
+             {
+                "schema":"excavation_report/er_cut.json",
+                "report":"cut"
+             },
+             {
+                "schema":"excavation_report/er_filldeposit.json",
+                "report":"fill_deposit"
+             },                                  
+             {
+                "schema":"excavation_report/er_samplebag.json",
+                "report":"sample_bag"
+             },
+             {
+                "schema":"excavation_report/er_specialfind.json",
+                "report":"special_find"
+             },
+             {
+                "schema":"excavation_report/er_structure.json",
+                "report":"structure"
+             },
+             {
+                "schema":"excavation_report/er_surface.json",
+                "report":"surface"
+             }
+        ]
+    }
+

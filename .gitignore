@@ -1,6 +1,8 @@
 # Keros Naxos Specific files and data
 *.csv
-/data/*.*
-/gis/*.*
-/script/_pychache_/*.*
-/script/x*
+*.tab
+data/**
+gis/**
+script/__pycache__/**
+/script/.vscode/**
+script/x*
