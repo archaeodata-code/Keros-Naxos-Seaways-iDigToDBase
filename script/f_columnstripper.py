@@ -17,9 +17,10 @@ from shutil import copy
 from pathlib import Path
 
 
+
+def columns(jsonfile):
 # helper module
 # build a list of desired columns from JSON file
-def columns(jsonfile):
     key=0
     dictstring = ""
     try:

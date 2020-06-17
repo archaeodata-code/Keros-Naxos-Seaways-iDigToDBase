@@ -1,0 +1,72 @@
+{
+"reportname":"report/sample_bag.csv",
+"csv":"Types/SampleBag.csv",
+"status":"draft",
+"work_to_be_done":"",
+"fields":[
+            {
+                "name":"Source",
+                "title":"Trench",
+                "type":"string",
+                "description":"The name of the trench from which this sample was taken.",
+                "constraints": {
+                    "required":true
+                    }                
+            },      
+            {
+                "name":"Identifier",
+                "title":"SampleNumber",
+                "type":"string",
+                "description":"Sample number is a sequential number assigned per trench at the time the sample is taken."              
+            },
+            {
+                "name":"Title",
+                "title":"SampleType",
+                "type":"string",
+                "description":"Names the sample type."
+            },
+            {
+                "name":"Origin",
+                "title":"Origin",
+                "type":"string",
+                "description":"The processing step from which the sample was taken (e.g. excavation or sieving, etc."
+            },
+            {
+                "name":"Creator",
+                "title":"Creator",
+                "type":"string",
+                "description":"Initials of staff person who created this record."
+            },
+            {
+                "name":"Description",
+                "title":"Description",
+                "type":"string",
+                "description":"Optional description of sample."
+            },
+            {
+                "name":"Date",
+                "title":"Date",
+                "type":"string",
+                "description":"The date the sample was taken in format DD:MM:YY."
+            },
+            {
+                "name":"RelationBelongsTo",
+                "title":"RelationBelongsTo",
+                "type":"string",
+                "description":"In iDig you can say a sample belongs to another or multiple other things."
+            },
+            {
+                "name":"RelationIncludes",
+                "title":"RelationIncludes",
+                "type":"string",
+                "description":"In iDig a sample can include another or multiple other things (e.g. photographs)"
+            },
+            {
+                "name":"IdentifierUUID",
+                "title":"IdentifierUUID",
+                "type":"string",
+                "description":"A globally unique identifier."
+            }
+        ],
+"missingValues":[""]
+}

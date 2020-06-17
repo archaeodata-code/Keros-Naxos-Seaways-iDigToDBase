@@ -1,0 +1,73 @@
+{
+"reportname":"report/special_find.csv",
+"csv":"Types/SpecialFind.csv",
+"status":"draft",
+"work_to_be_done":"",
+"fields":[
+            {
+                "name":"Source",
+                "title":"Trench",
+                "type":"string",
+                "description":"The name of the trench from which this sample was taken."
+            },
+            {
+                "name":"Type",
+                "title":"Type",
+                "type":"string",
+                "description":"The type of item.",
+                "constraints":{
+                    "required":true
+                    }
+            },
+            {
+                "name":"Identifier",
+                "title":"Identifier",
+                "type":"string",
+                "description":"Identifier on a sample record is a sequential number assigned per context at the time the sample is taken.",
+                "constraints":{
+                    "required":true,
+                    "unique": true
+                    }
+            },
+            {
+                "name":"Title",
+                "title":"SubType",
+                "type":"string",
+                "description":"The type of special find.",
+                "constraints": {
+                    "enum":["metals and metallurgical","worked stone","stone disc","marble figurine","stone vessel","spool","Kouphonisi limestone pebble","unworked imported stone","worked bone","worked shell","bead","obsidian","architectural element","spindle whorl","worked sherd","metallurgical ceramic","matt impression","other ceramic","ERROR","Discarded During Study Season"]
+                }
+            },
+            {
+                "name":"Creator",
+                "title":"Creator",
+                "type":"string",
+                "description":"Initials of staff person who created this record."
+            },
+            {
+                "name":"Description",
+                "title":"Description",
+                "type":"string",
+                "description":"Short description of special find."
+            },
+            {
+                "name":"CoverageGEO",
+                "title":"Geometry",
+                "type":"string",
+                "description":"A Well Known Text formatted description of all points take re-expressed from local grid to universal grid.  Warning:  this does not differentiate consistently between opening and closing levels and perimeters.  Needs work."
+            },
+            {
+                "name":"RelationBelongsTo",
+                "title":"RelationBelongsTo",
+                "type":"string",
+                "description":"The context to which the special find belongs."
+            },
+            {
+                "name":"IdentifierUUID",
+                "title":"IdentifierUUID",
+                "type":"string",
+                "description":"A globally unique identifier."
+            }
+        ],
+"missingValues":[""]
+}

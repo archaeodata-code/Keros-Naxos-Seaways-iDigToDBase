@@ -3,6 +3,7 @@ version:  1.0 JFA
 
 WORK:
     -- the return values from assemble, flatten and geo
+    -- rework how this is called
 
 The main program
 Note:  code legibility was valued over efficency and elegance.

@@ -12,15 +12,6 @@
                 "description":"The name of the trench from which this sample was taken."
             },
             {
-                "name":"Type",
-                "title":"Type",
-                "type":"string",
-                "description":"The type of item.",
-                "constraints":{
-                    "required":true
-                    }
-            },
-            {
                 "name":"Identifier",
                 "title":"Identifier",
                 "type":"string",
