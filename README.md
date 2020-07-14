@@ -96,7 +96,7 @@ In addition to modules installed by default, the following are also required:
 2. [GeoPandas](https://geopandas.org) - for building GeoPackages.
 3. [Table Schema](https://github.com/frictionlessdata/tableschema-py) - for working with CSV files.
 4. [Good Tables](https://github.com/frictionlessdata/goodtables-py) for data validation.
-5. [Shapely](https://shapely.readthedocs.io/en/latest/) and [PyShp] (https://pypi.org/project/pyshp/#examples) for working geometry at a basic level (likely just need one but that will require some code rework).
+5. [Shapely](https://shapely.readthedocs.io/en/latest/) and [PyShp](https://pypi.org/project/pyshp/#examples) for working geometry at a basic level (likely just need one but that will require some code rework).
 6. [SQLAlchemy](https://www.sqlalchemy.org) - for database connectivity and build
 7. JSON, SQLite, CSV etc come with your basic Python installation (at least in 3.7)
 
