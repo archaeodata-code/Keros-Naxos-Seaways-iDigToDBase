@@ -8,7 +8,7 @@
 {{TOC}}
 
 ## Purpose
-The iDig to SQLite Data Processing tools take data exported from Bruce Hartzler's iDig (thanks Bruce!) and move them into a set of CSV files that can support a variety of uses such as import to a database or GIS.  There is also a second round of processing more specific to the project of origin (Keros-Naxos Seaways, directed by Colin Renfrew and Michael Boyd) and this creates additional CSVs for the GIS as well as a GeoPackage and a Sqlite database.  All of this can be modified for your project.
+The iDig to SQLite Data Processing tools take data exported from Bruce Hartzler's iDig (thanks Bruce!) and move them into a set of CSV files that can support a variety of uses such as import to a database or GIS.  There is also a second round of processing more specific to the project of origin (Keros-Naxos Seaways, directed by Colin Renfrew and Michael Boyd) and this creates additional CSVs for the GIS as well as a GeoPackage and a SQLite database.  All of this can be modified for your project.  The SQLite database is meant not only to serve as project tool but also to be shareable with others including data repositories such as [Open Context] (https://opencontext.org/). 
 
 ## Basic Requirements
 It would be good if a completely non-technical archaeologist could use these tools.  Unfortunately that is not the case.  Minimally you will need to have a rough understanding / tools as follows:
