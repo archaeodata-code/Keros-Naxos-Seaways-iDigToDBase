@@ -8,7 +8,7 @@
 {{TOC}}
 
 ## Purpose
-The iDig to SQLite Data Processing tools take data exported from Bruce Hartzler's iDig (thanks Bruce!) and move them into a set of CSV files that can support a variety of uses such as import to a database or GIS.  There is also a second round of processing more specific to the project of origin (Keros-Naxos Seaways, directed by Colin Renfrew and Michael Boyd) and this creates additional CSVs for the GIS as well as a GeoPackage and a SQLite database.  All of this can be modified for your project.  The SQLite database is meant not only to serve as project tool but also to be shareable with others including data repositories such as [Open Context] (https://opencontext.org/). 
+The iDig to SQLite Data Processing tools take data exported from Bruce Hartzler's iDig (thanks Bruce!) and move them into a set of CSV files that can support a variety of uses such as import to a database or GIS.  There is also a second round of processing more specific to the project of origin (Keros-Naxos Seaways, directed by Colin Renfrew and Michael Boyd) and this creates additional CSVs for the GIS as well as a GeoPackage and a SQLite database.  All of this can be modified for your project.  The SQLite database is meant not only to serve as project tool but also to be shareable with others including data repositories such as [Open Context](https://opencontext.org/). 
 
 ## Basic Requirements
 It would be good if a completely non-technical archaeologist could use these tools.  Unfortunately that is not the case.  Minimally you will need to have a rough understanding / tools as follows:
@@ -46,18 +46,18 @@ The below summarizes the steps that one has to take from start to finish.
 There is no clear standard for archaeology informatics that appeared directly applicable to this set of tools.  Several "contenders" were evaluated but in general were found to target a broader scope, be generally quite abstract, and, given our purpose, not specifically very useful.  Here are some further notes:  
 
 1. The naming conventions of the Dublin Core were considered and in some cases adopted.  But as Dublin Core was conceived for cataloging media it is only partially useful.  Note that iDig heavily uses and extends Dublin Core.  Actual experience with the data named after Dublin Core was mixed.
-2. Likewise [CIDOC CRM] (http://www.cidoc-crm.org/collaborations) was looked at and partially adopted.  However, CIDOC CRM is event based (heavily focused on process both natural and human-based) and more complex in scope and intent then this project. 
-3. [OCHRE and ArchaeoML] (https://ochre.uchicago.edu/) were reviewed but found to cover a far broader scope and thus necessarily abstract and once again overly complex to implement in this context.
-4. [Open Context] (https://opencontext.org/) was also reviewed but does not have the same range of data as used here.
+2. Likewise [CIDOC CRM](http://www.cidoc-crm.org/collaborations) was looked at and partially adopted.  However, CIDOC CRM is event based (heavily focused on process both natural and human-based) and more complex in scope and intent then this project. 
+3. [OCHRE and ArchaeoML](https://ochre.uchicago.edu/) were reviewed but found to cover a far broader scope and thus necessarily abstract and once again overly complex to implement in this context.
+4. [Open Context](https://opencontext.org/) was also reviewed but does not have the same range of data as used here.
 
 In the end then, a design for the database was specific to the Keros-Naxos Seaways Project.  Not ideal but practicable for this scope of work.
 
 ### Database Definition And Data Processing
-Here there was a direct and simple answer on what standard to use for the actual expression of the database design: [Frictionless Data] (http://frictionlessdata.io/) has published a well designed set of standards to express database and data entity designs as well as useful [Python tooling] (https://github.com/frictionlessdata/tableschema-py) for processing the data from source to target.
+Here there was a direct and simple answer on what standard to use for the actual expression of the database design: [Frictionless Data](http://frictionlessdata.io/) has published a well designed set of standards to express database and data entity designs as well as useful [Python tooling(https://github.com/frictionlessdata/tableschema-py) for processing the data from source to target.
 
-[GeoPackage] (https://www.geopackage.org) was selected as the target for a GIS build as the resulting file is extremely portable.
+[GeoPackage](https://www.geopackage.org) was selected as the target for a GIS build as the resulting file is extremely portable.
 
-[SQLite] (https://www.sqlite.org/) is our target database for three reasons:  1) it is well supported in Python and 2) it is self-contained and easily moved from computer to computer and 3) we plan to build an iPad tool using SQLite in the future.  In SQLite there is no support for  DATETIME, DATE and TIME data types.  Instead they are managed as ISO compliant strings.
+[SQLite](https://www.sqlite.org/) is our target database for three reasons:  1) it is well supported in Python and 2) it is self-contained and easily moved from computer to computer and 3) we plan to build an iPad tool using SQLite in the future.  In SQLite there is no support for  DATETIME, DATE and TIME data types.  Instead they are managed as ISO compliant strings.
 
 
 ## Processing Details
@@ -86,25 +86,25 @@ In addition to database and table design, the tools are meant to be somewhat ind
 
 This was developed in Python 3.7.
 
-The specific version of Python was that provided by [Anaconda] (https://www.anaconda.com/products/individual).
+The specific version of Python was that provided by [Anaconda](https://www.anaconda.com/products/individual).
 
 For simplicity's sake all the required modules beyond the basic installation where install using the Anaconda desktop application. The Anaconda desk-top tool is not without its problems but still a good place to start as it also is a good workbench for other tools you might want (such as IDEs and statistical tools).
 
 In addition to modules installed by default, the following are also required:
 
-1. [Pandas] (https://pandas.pydata.org) - used to manipulate table-like data.
-2. [GeoPandas] (https://geopandas.org) - for building GeoPackages.
-3. [Table Schema] (https://github.com/frictionlessdata/tableschema-py) - for working with CSV files.
-4. [Good Tables] (https://github.com/frictionlessdata/goodtables-py) for data validation.
-5. [Shapely] (https://shapely.readthedocs.io/en/latest/) and [PyShp] (https://pypi.org/project/pyshp/#examples) for working geometry at a basic level (likely just need one but that will require some code rework).
-6. [SQLAlchemy] (https://www.sqlalchemy.org) - for database connectivity and build
+1. [Pandas](https://pandas.pydata.org) - used to manipulate table-like data.
+2. [GeoPandas](https://geopandas.org) - for building GeoPackages.
+3. [Table Schema](https://github.com/frictionlessdata/tableschema-py) - for working with CSV files.
+4. [Good Tables](https://github.com/frictionlessdata/goodtables-py) for data validation.
+5. [Shapely](https://shapely.readthedocs.io/en/latest/) and [PyShp] (https://pypi.org/project/pyshp/#examples) for working geometry at a basic level (likely just need one but that will require some code rework).
+6. [SQLAlchemy](https://www.sqlalchemy.org) - for database connectivity and build
 7. JSON, SQLite, CSV etc come with your basic Python installation (at least in 3.7)
 
 ### Specifically On Database and GeoPackage
 Important points:
 
 1. These both rely on JSON schema files for their build.
-2. These rebuild the entire database or GeoPackage each time.  The premise here is the "single source of truth" for data during the lifetime the project is iDig.  When the project is done, and archived version of the data will be placed on [Zenodo] (https://zenodo.org).
+2. These rebuild the entire database or GeoPackage each time.  The premise here is the "single source of truth" for data during the lifetime the project is iDig.  When the project is done, and archived version of the data will be placed on [Zenodo](https://zenodo.org).
 
 ### Directory Structure
 As developed the code works with the folder structure that was part of this zip file.  If you change you will have to change the code.
@@ -116,7 +116,7 @@ As developed the code works with the folder structure that was part of this zip 
 1. ### Change Log
 
 1. ### Contributors & Contact
-Nathan Meyer [orcid] (https://orcid.org/0000-0001-6847-8199)
+Nathan Meyer [orcid](https://orcid.org/0000-0001-6847-8199)
  
 
 
